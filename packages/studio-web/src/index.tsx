@@ -14,7 +14,7 @@ import { canRenderApp } from "./canRenderApp";
 
 const log = Logger.getLogger(__filename);
 
-function LogAfterRender(props) {
+function LogAfterRender(props: { children: any; }) {
   useEffect(() => {
     // 集成测试查找此控制台日志以指示应用程序已渲染一次
     // We use console.debug to bypass our logging library which hides some log levels in prod builds

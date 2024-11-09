@@ -4,9 +4,9 @@
 
 import { useRef, useLayoutEffect } from "react";
 
-import Logger from "@foxglove/log";
+// import Logger from "@foxglove/log";
 
-const log = Logger.getLogger(__filename);
+// const log = Logger.getLogger(__filename);
 
 const noOpImpl = () => {};
 

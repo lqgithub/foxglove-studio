@@ -119,6 +119,8 @@ overrides:
       "@typescript-eslint/no-unsafe-assignment": off
       "@typescript-eslint/no-unsafe-call": off
 
+      "@typescript-eslint/no-explicit-any": off
+
       # These could theoretically be turned on (or merit investigation) but are currently noisy
       "@typescript-eslint/no-misused-promises": off # Often used with e.g. useCallback(async () => {})
       "@typescript-eslint/restrict-template-expressions": off
@@ -138,12 +140,12 @@ overrides:
           varsIgnorePattern: "^_."
           argsIgnorePattern: "^_."
 
-  - rules:
-      "@typescript-eslint/no-explicit-any": off
-    files:
-      - "**/*.stories.tsx"
-      - "**/*.test.tsx"
-      - "**/*.test.ts"
+  # - rules:
+  #     "@typescript-eslint/no-explicit-any": off
+  #   files:
+  #     - "**/*.stories.tsx"
+  #     - "**/*.test.tsx"
+  #     - "**/*.test.ts"
 
   - rules:
       react/forbid-component-props: off
